@@ -1,0 +1,27 @@
+=== 1. Cadastro de produtos ===
+Produtos cadastrados com sucesso.
+  [0] Arroz 5kg | Pre?o: R$ 25,90 | Quantidade: 10 | Valor total: R$ 259,00
+  [1] Detergente | Pre?o: R$ 2,50 | Quantidade: 40 | Valor total: R$ 100,00
+  [2] Leite 1L | Pre?o: R$ 5,00 | Quantidade: 20 | Vence em: 2 dia(s) (20% de desconto aplicado) | Valor total: R$ 80,00
+  [3] Queijo Minas | Pre?o: R$ 30,00 | Quantidade: 5 | Vence em: 10 dia(s) | Valor total: R$ 150,00
+
+=== 2. Cadastro inv?lido (quantidade negativa) ===
+QuantidadeInvalidaException capturada: Quantidade inv?lida para 'Feij?o 1kg': -3
+
+=== 3. Venda v?lida ===
+Venda de 4 unidades de 'Arroz 5kg' realizada. Restam 6.
+
+=== 4. Venda acima do dispon?vel ===
+ProdutoIndisponivelException capturada: Estoque insuficiente de 'Iogurte': solicitado 50, dispon?vel 8.
+
+=== 5. Sobrecarga de aplicarDesconto() ===
+Detergente com 10% de desconto: R$ 2,25
+Queijo com 50% (m?x. R$ 5,00): R$ 25,00
+
+=== 6. Estoque final e valor total ===
+  [0] Arroz 5kg | Pre?o: R$ 25,90 | Quantidade: 6 | Valor total: R$ 155,40
+  [1] Detergente | Pre?o: R$ 2,25 | Quantidade: 40 | Valor total: R$ 90,00
+  [2] Leite 1L | Pre?o: R$ 5,00 | Quantidade: 20 | Vence em: 2 dia(s) (20% de desconto aplicado) | Valor total: R$ 80,00
+  [3] Queijo Minas | Pre?o: R$ 25,00 | Quantidade: 5 | Vence em: 10 dia(s) | Valor total: R$ 125,00
+  [4] Iogurte | Pre?o: R$ 3,20 | Quantidade: 8 | Vence em: 1 dia(s) (20% de desconto aplicado) | Valor total: R$ 20,48
+VALOR TOTAL DO ESTOQUE: R$ 470,88
